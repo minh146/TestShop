@@ -1,0 +1,5 @@
+C:\Users\duong\source\repos\TestShop\TestShop.Model\bin\Debug\TestShop.Model.dll
+C:\Users\duong\source\repos\TestShop\TestShop.Model\bin\Debug\TestShop.Model.pdb
+C:\Users\duong\source\repos\TestShop\TestShop.Model\obj\Debug\TestShop.Model.csproj.CoreCompileInputs.cache
+C:\Users\duong\source\repos\TestShop\TestShop.Model\obj\Debug\TestShop.Model.dll
+C:\Users\duong\source\repos\TestShop\TestShop.Model\obj\Debug\TestShop.Model.pdb
