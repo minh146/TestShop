@@ -51,6 +51,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Infrastructure\DbFactory.cs" />
+    <Compile Include="Infrastructure\Disposable.cs" />
+    <Compile Include="Infrastructure\IDbFactory.cs" />
     <Compile Include="Migrations\202012020828464_InitialDB.cs" />
     <Compile Include="Migrations\202012020828464_InitialDB.designer.cs">
       <DependentUpon>202012020828464_InitialDB.cs</DependentUpon>

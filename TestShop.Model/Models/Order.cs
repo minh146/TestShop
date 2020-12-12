@@ -2,13 +2,9 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace TestShop.Model.Models
 {
-
     [Table("Orders")]
     public class Order
     {
@@ -47,4 +43,3 @@ namespace TestShop.Model.Models
         public virtual IEnumerable<OrderDetail> OrderDetails { set; get; }
     }
 }
-
