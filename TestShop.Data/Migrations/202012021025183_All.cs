@@ -1,8 +1,7 @@
 ﻿namespace TestShop.Data.Migrations
 {
-    using System;
     using System.Data.Entity.Migrations;
-    
+
     public partial class All : DbMigration
     {
         public override void Up()
@@ -10,13 +9,13 @@
             CreateTable(
                 "dbo.Tags",
                 c => new
-                    {
-                        ID = c.String(nullable: false, maxLength: 50, unicode: false),
-                        Name = c.String(nullable: false, maxLength: 50),
-                        Type = c.String(nullable: false, maxLength: 50),
-                    })
+                {
+                    ID = c.String(nullable: false, maxLength: 50, unicode: false),
+                    Name = c.String(nullable: false, maxLength: 50),
+                    Type = c.String(nullable: false, maxLength: 50),
+                })
                 .PrimaryKey(t => t.ID);
-            
+
             CreateIndex("dbo.OrderDetails", "ProductID");
             CreateIndex("dbo.Products", "CategoryID");
             CreateIndex("dbo.Posts", "CategoryID");
@@ -28,7 +27,7 @@
             AddForeignKey("dbo.PostTags", "TagID", "dbo.Tags", "ID", cascadeDelete: true);
             AddForeignKey("dbo.ProductTags", "TagID", "dbo.Tags", "ID", cascadeDelete: true);
         }
-        
+
         public override void Down()
         {
             DropForeignKey("dbo.ProductTags", "TagID", "dbo.Tags");
