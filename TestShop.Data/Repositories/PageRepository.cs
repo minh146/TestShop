@@ -7,7 +7,7 @@ namespace TestShop.Data.Repositories
     {
     }
 
-    public class PageRepository : RepositoryBase<Page>
+    public class PageRepository : RepositoryBase<Page>, IPageRepository
     {
         public PageRepository(IDbFactory dbFactory) : base(dbFactory)
         {

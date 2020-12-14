@@ -11,10 +11,12 @@ namespace TestShop.Data.Infrastructure
 
         // Marks an entity as modified
         void Update(T entity);
+         
 
         // Marks an entity to be removed
         void Delete(T entity);
 
+        void Delete(int id);
         //Delete multi records
         void DeleteMulti(Expression<Func<T, bool>> where);
 

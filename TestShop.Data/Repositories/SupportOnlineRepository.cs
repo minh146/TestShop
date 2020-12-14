@@ -3,7 +3,11 @@ using TestShop.Model.Models;
 
 namespace TestShop.Data.Repositories
 {
-    public class SupportOnlineRepository : RepositoryBase<SupportOnline>
+    public interface ISupportOnlineRepository : IRepository<SupportOnline>
+    {
+    }
+
+    public class SupportOnlineRepository : RepositoryBase<SupportOnline>, ISupportOnlineRepository
     {
         public SupportOnlineRepository(IDbFactory dbFactory) : base(dbFactory)
         {

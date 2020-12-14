@@ -49,6 +49,11 @@ namespace TestShop.Data.Infrastructure
         {
             dbSet.Remove(entity);
         }
+        public void Delete(int id)
+        {
+            var entity = dbSet.Find(id);
+            dbSet.Remove(entity);
+        }
 
         public virtual void DeleteMulti(Expression<Func<T, bool>> where)
         {
@@ -133,6 +138,7 @@ namespace TestShop.Data.Infrastructure
             return dataContext.Set<T>().Count<T>(predicate) > 0;
         }
 
+       
         #endregion Implementation
     }
 }
