@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using TestShop.Data.Infrastructure;
+﻿using TestShop.Data.Infrastructure;
 using TestShop.Model.Models;
 
 namespace TestShop.Data.Repositories
@@ -12,8 +7,5 @@ namespace TestShop.Data.Repositories
     {
         public SlideRepository(IDbFactory dbFactory) : base(dbFactory)
         {
-
-
-
         }
     }

@@ -1,7 +1,6 @@
 ﻿using System;
-using TestShop.Data;
 
-namespace TeduShop.Data.Infrastructure
+namespace TestShop.Data.Infrastructure
 {
     public interface IDbFactory : IDisposable
     {

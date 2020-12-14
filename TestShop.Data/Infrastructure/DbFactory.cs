@@ -1,6 +1,4 @@
-﻿
-
-namespace TestShop.Data.Infrastructure
+﻿namespace TestShop.Data.Infrastructure
 {
     public class DbFactory : Disposable, IDbFactory
     {
