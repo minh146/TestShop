@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 
 namespace TestShop.Web.Areas.HelpPage.ModelDescriptions
